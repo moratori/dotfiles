@@ -53,7 +53,7 @@
  let lisp_rainbow=1
  let g:slimv_clhs_root = "/home/moratori/CLHS/HyperSpec-7-0/HyperSpec/Body/"
  let g:slimv_python = "/usr/bin/python2.7"
- let g:slimv_swank_cmd = "! xterm -e sbcl --eval '(ql:quickload :swank)' --eval '(swank:create-server)' &"
+ let g:slimv_swank_cmd = "! sbcl --eval '(ql:quickload :swank)' --eval '(swank:create-server)' --eval '(loop do (sleep 10))' > /dev/null 2>&1 & "
 
  "-------------------------------------------------------
 
