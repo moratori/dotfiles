@@ -36,6 +36,7 @@
  NeoBundle 'Shougo/neosnippet-snippets'
  NeoBundle 'sudo.vim'
  NeoBundle 'Yggdroot/indentLine'
+ NeoBundle "tyru/caw.vim.git"
 
  call neobundle#end()
 
@@ -132,7 +133,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  nmap <C-E> <C-W><C-W>
 
   " open nerdtree
- nmap <C-F> :NERDTree<CR>
+ nmap <C-N> :NERDTree<CR>
 
  " run this script
  nmap <C-R> :QuickRun<CR>
@@ -144,6 +145,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  " move tab
  nmap <F7> :tabN<CR>
  nmap <F8> :tabn<CR>
+
+ nmap <Leader>c <Plug>(caw:i:toggle)
+ vmap <Leader>c <Plug>(caw:i:toggle)
 
  "------------------------------------------------------
  
