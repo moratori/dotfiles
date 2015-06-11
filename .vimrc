@@ -97,7 +97,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  set list listchars=tab:\¦\
 
 "------------------------------------------------------
-
+ 
+ au BufNewFile,BufRead *.asd setf lisp
  syn on
  set number
  set statusline=%<%f\ %m%r%h%w%=%{GetStatusEx()}\ \ %l,%c%V%8P
