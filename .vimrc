@@ -37,6 +37,7 @@
  NeoBundle 'sudo.vim'
  NeoBundle 'Yggdroot/indentLine'
  NeoBundle "tyru/caw.vim.git"
+ NeoBundle "tpope/vim-fugitive"
 
  call neobundle#end()
 
