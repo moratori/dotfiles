@@ -38,6 +38,16 @@
  NeoBundle 'Yggdroot/indentLine'
  NeoBundle "tyru/caw.vim.git"
  NeoBundle "tpope/vim-fugitive"
+ NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+ NeoBundle 'Shougo/vimshell.vim'
 
  call neobundle#end()
 
