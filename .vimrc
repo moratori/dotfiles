@@ -100,6 +100,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  
  au BufNewFile,BufRead *.asd setf lisp
  syn on
+ set noswapfile
  set number
  set statusline=%<%f\ %m%r%h%w%=%{GetStatusEx()}\ \ %l,%c%V%8P
  set laststatus=2
@@ -149,6 +150,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
  nmap <Leader>c <Plug>(caw:i:toggle)
  vmap <Leader>c <Plug>(caw:i:toggle)
+
+ inoremap <silent> jj <ESC>
 
  "------------------------------------------------------
  
