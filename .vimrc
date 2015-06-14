@@ -142,8 +142,17 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  "change buffer size lower
  nmap <C-D> <C-W>-
 
+
  " mvoe buffer
  nmap <C-E> <C-W><C-W>
+
+ nmap rj <C-W>j
+ nmap rk <C-W>k
+ nmap rh <C-W>h
+ nmap rl <C-W>l
+
+
+
 
   " open nerdtree
  nmap <C-N> :NERDTree<CR>
