@@ -99,8 +99,6 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-
-
  "-------------------------------------------------------
 
  let g:quickrun_config={'*': {'split': ''}} 
@@ -172,6 +170,11 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
  vmap <Leader>c <Plug>(caw:i:toggle)
 
  inoremap <silent> jj <ESC>
+
+ inoremap { {}<Left>
+ inoremap ( ()<Left>
+ inoremap [ []<Left>
+
 
  "------------------------------------------------------
  
